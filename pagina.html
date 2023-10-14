@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro del Perosonal</title>
+
+    <link rel="stylesheet" href="public/css/estilos.css">
+    <!--fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>BIENVENIDO REGISTRO DE ASISTENCIA</h1>
+    <h2 id="fecha"></h2>
+
+    <div class="container">
+        <a class="acceso" href=""> Ingresar al sistema </a>
+        <p class="dni">Ingrese su DNI</p>
+        
+
+        <form action="">
+            <input type="number" name="textdni" placeholder="Ingrese su Dni">
+        </form>
+    <div class="botones">
+        <a href="" class="entrada">entrada</a>
+        <a href="" class="salida">salida</a>
+    </div>
+        
+    </div>
+
+    <script>
+              
+
+        setInterval(() => {
+            let fecha = new Date();
+            let fechaHora = fecha. toLocaleString();
+
+        document.getElementById("fecha").textContent = fechaHora;
+        }, 1000);
+    </script>
+</body>
+</html>
